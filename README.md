@@ -6,34 +6,35 @@
 ## Changes Made
 
 ### 1. Fix Methods Parameters
-- **Commit**: [fix methods parameters](https://github.com/IHaidov/GildedRose-Refactoring-Kata/commit/fix-methods-parameters)
+
+- **Commit**: [fix methods parameters](https://github.com/IHaidov/GildedRose-Refactoring-Kata/commit/6ae06d8c3046fc4d15015b99d07f9515b8705e88)
 - **Description**: Added the `self` parameter to `update_sulfuras`, `update_normal_item`, and `update_conjured`.
 - **Justification**: Fixed `TypeError` caused by missing `self` in instance methods.
 
 ### 2. Complete `update_conjured` and `_update_backstage_passes`
-- **Commit**: [complete update_conjured and _update_backstage_passes methods](https://github.com/IHaidov/GildedRose-Refactoring-Kata/commit/complete-update_conjured-and-_update_backstage_passes-methods)
+- **Commit**: [complete update_conjured and _update_backstage_passes methods](https://github.com/IHaidov/GildedRose-Refactoring-Kata/commit/0c036dca6da469fb006a22f6028e0419aa18e86c)
 - **Description**: Implemented logic for "Conjured" items (degrade twice as fast) and refactored "Backstage Passes" using constants for clarity.
 - **Justification**: Ensures correct behavior for these items and improves readability.
 
 ### 3. Add Aged Brie Test
-- **Commit**: [add Aged Brie test](https://github.com/IHaidov/GildedRose-Refactoring-Kata/commit/add-aged-brie-test)
+- **Commit**: [add Aged Brie test](https://github.com/IHaidov/GildedRose-Refactoring-Kata/commit/ec5ba9b1e3f045ce9b5493ee0edee338f6ed9bcc)
 - **Description**: Added a unit test to validate the behavior of "Aged Brie" (quality increases over time and doubles after the sell-by date).
 - **Justification**: Ensures functionality aligns with requirements.
 
 ### 4. Complete `update_aged_brie` and `update_normal_item`
-- **Commit**: [complete update_aged_brie and update_normal_item functions](https://github.com/IHaidov/GildedRose-Refactoring-Kata/commit/complete-update_aged_brie-and-update_normal_item-functions)
+- **Commit**: [complete update_aged_brie and update_normal_item functions](https://github.com/IHaidov/GildedRose-Refactoring-Kata/commit/77ca1977d3a4bbdcbfe1de979ba17743b4d5ec13)
 - **Description**: 
   - `update_aged_brie`: Implements quality increase over time.
   - `update_normal_item`: Implements quality degradation, accelerating after the sell-by date.
 - **Justification**: Adheres to requirements for specific item behaviors.
 
 ### 5. Add Logic Separation Placeholders
-- **Commit**: [add logic separation placeholders and max quality for items variables](https://github.com/IHaidov/GildedRose-Refactoring-Kata/commit/add-logic-separation-placeholders-and-max-quality-for-items-variables)
+- **Commit**: [add logic separation placeholders and max quality for items variables](https://github.com/IHaidov/GildedRose-Refactoring-Kata/commit/8ba7e846302ed3ea39802c164fc0ab6546835f5a)
 - **Description**: Added placeholders to separate logic for item types and introduced `MAX_QUALITY` for constraints.
 - **Justification**: Improves maintainability and clarity.
 
 ### 6. Delete Non-Python Files
-- **Commit**: [delete everything that is not python](https://github.com/IHaidov/GildedRose-Refactoring-Kata/commit/delete-everything-that-is-not-python)
+- **Commit**: [delete everything that is not python](https://github.com/IHaidov/GildedRose-Refactoring-Kata/commit/cee1cc765bffd96e2eb6ba3f25fa11c72d73aac2)
 - **Description**: Removed unnecessary files from the repository.
 - **Justification**: Focuses the repository on Python implementation and testing.
 
