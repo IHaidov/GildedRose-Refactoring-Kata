@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 
 class GildedRose(object):
+    MAX_QUALITY = 50
+    MAX_CONJURED_QUALITY = 80
 
     def __init__(self, items):
         self.items = items
@@ -35,6 +37,21 @@ class GildedRose(object):
                     if item.quality < 50:
                         item.quality = item.quality + 1
 
+    def update_aged_brie(item):
+        return
+    
+    def update_backstage_passes(item):
+        return
+    
+    def update_sulfuras(item):
+        return
+    
+    def update_normal_item(item):
+        return
+
+    def update_conjured(item):
+        return
+    
 
 class Item:
     def __init__(self, name, sell_in, quality):
