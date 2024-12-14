@@ -1,3 +1,58 @@
+# Gilded Rose Refactoring Kata: Changes and Justifications
+
+## Repository Link
+[GitHub Repository - GildedRose Refactoring Kata](https://github.com/IHaidov/GildedRose-Refactoring-Kata/commits/main)
+
+## Changes Made
+
+### 1. Fix Methods Parameters
+- **Commit**: [fix methods parameters](https://github.com/IHaidov/GildedRose-Refactoring-Kata/commit/fix-methods-parameters)
+- **Description**: Added the `self` parameter to `update_sulfuras`, `update_normal_item`, and `update_conjured`.
+- **Justification**: Fixed `TypeError` caused by missing `self` in instance methods.
+
+### 2. Complete `update_conjured` and `_update_backstage_passes`
+- **Commit**: [complete update_conjured and _update_backstage_passes methods](https://github.com/IHaidov/GildedRose-Refactoring-Kata/commit/complete-update_conjured-and-_update_backstage_passes-methods)
+- **Description**: Implemented logic for "Conjured" items (degrade twice as fast) and refactored "Backstage Passes" using constants for clarity.
+- **Justification**: Ensures correct behavior for these items and improves readability.
+
+### 3. Add Aged Brie Test
+- **Commit**: [add Aged Brie test](https://github.com/IHaidov/GildedRose-Refactoring-Kata/commit/add-aged-brie-test)
+- **Description**: Added a unit test to validate the behavior of "Aged Brie" (quality increases over time and doubles after the sell-by date).
+- **Justification**: Ensures functionality aligns with requirements.
+
+### 4. Complete `update_aged_brie` and `update_normal_item`
+- **Commit**: [complete update_aged_brie and update_normal_item functions](https://github.com/IHaidov/GildedRose-Refactoring-Kata/commit/complete-update_aged_brie-and-update_normal_item-functions)
+- **Description**: 
+  - `update_aged_brie`: Implements quality increase over time.
+  - `update_normal_item`: Implements quality degradation, accelerating after the sell-by date.
+- **Justification**: Adheres to requirements for specific item behaviors.
+
+### 5. Add Logic Separation Placeholders
+- **Commit**: [add logic separation placeholders and max quality for items variables](https://github.com/IHaidov/GildedRose-Refactoring-Kata/commit/add-logic-separation-placeholders-and-max-quality-for-items-variables)
+- **Description**: Added placeholders to separate logic for item types and introduced `MAX_QUALITY` for constraints.
+- **Justification**: Improves maintainability and clarity.
+
+### 6. Delete Non-Python Files
+- **Commit**: [delete everything that is not python](https://github.com/IHaidov/GildedRose-Refactoring-Kata/commit/delete-everything-that-is-not-python)
+- **Description**: Removed unnecessary files from the repository.
+- **Justification**: Focuses the repository on Python implementation and testing.
+
+## Testing Strategy
+
+1. **Unit Tests**:
+   - Verified functionality for all item types ("Aged Brie", "Backstage Passes", "Conjured", normal items).
+   - Covered edge cases (e.g., maximum quality, sell-in date passed).
+
+2. **Test Cases**:
+   - Added `test_aged_brie` to verify:
+     - Quality increases correctly before and after the sell-by date.
+     - Quality stops at the maximum (50).
+
+3. **Outcome**:
+   - All tests passed without errors, confirming correct implementation.
+
+
+
 _Support this and all my katas via [Patreon](https://www.patreon.com/EmilyBache)_
 
 # Gilded Rose Refactoring Kata
