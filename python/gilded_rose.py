@@ -40,10 +40,10 @@ class GildedRose(object):
         if item.sell_in < 0:
             item.quality = 0
     
-    def update_sulfuras(item):
+    def update_sulfuras(self, item):
         return
     
-    def update_normal_item(item):
+    def update_normal_item(self, item):
         if item.quality > 0:
             item.quality -= 1
             if item.sell_in <= 0:
@@ -51,7 +51,7 @@ class GildedRose(object):
         item.quality = max(0, item.quality)
         item.sell_in -= 1
 
-    def update_conjured(item):
+    def update_conjured(self, item):
         if item.quality > 0:
             item.quality -= 2
             if item.sell_in <= 0:
